@@ -1,7 +1,9 @@
 """
 Ejercicio 1:
 
-Existen al menos dos metodos ampliamente utilizados para medir la temperatura ambiente. Uno es usando grados Farenheit, y otro usando grados Celsius. Codifiquen dos programas: Uno que convierta un numero ingresado de grado Celsius a Farenheit, y otro que convierta de Farenheit a Celsius.
+Existen al menos dos metodos ampliamente utilizados para medir la temperatura ambiente. Uno es usando grados Farenheit, 
+y otro usando grados Celsius. Codifiquen dos programas: Uno que convierta un numero ingresado de grado Celsius a Farenheit, 
+y otro que convierta de Farenheit a Celsius.
 
 Formula:
 ºF = ºC x 1.8 + 32
