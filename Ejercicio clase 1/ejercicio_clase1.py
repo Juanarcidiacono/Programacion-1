@@ -14,6 +14,7 @@ Ejercicio 2:
 Una practica cotidiana en desarrollo de software es mirar programas de otros. En este ejercicio, van a tener acceso al codigo, pueden probarlo con distintos numeros y verificar el resultado. Lo que les pido es que cuenten en sus palabras, lo que hace el programa.
 
 
+
 num1 = int(input("primer numero: "))
 num2 = int(input("segundo numero: "))
 
