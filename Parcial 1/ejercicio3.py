@@ -4,12 +4,14 @@ def main():
 def input_word():
     # El usuario ingresa una palabra. Lo convierto a una lista para que sea mas facil contar los caracteres
     word = list(input("Ingrese una palabra >> "))
+     
     return word
 
 
 def count_letters(word, number_of_letters=0):
     for letter_pos in range(len(word)+1):
         number_of_letters =+  letter_pos
+
     return number_of_letters
 
 
