@@ -1,5 +1,5 @@
 def main():
-    print_word()
+    print_word_and_number_of_letters()
 
 def input_word():
     word = list(input("Ingrese una palabra >> "))
@@ -10,7 +10,7 @@ def count_letters(word, number_of_letters=0):
         number_of_letters = + letter_pos
     return number_of_letters
 
-def print_word(word=None, key=list("salir")):
+def print_word_and_number_of_letters(word=None, key=list("salir")):
     while word != key:
         word = input_word()
         for letter in word:
