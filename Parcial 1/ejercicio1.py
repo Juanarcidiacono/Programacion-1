@@ -1,7 +1,6 @@
 def main():
     sum_and_print_even_numbers()
 
-
 def input_number():
     is_number_correct = False
 
@@ -16,7 +15,6 @@ def input_number():
 
     return number
 
-
 def calculate_even_numbers_given_a_number():
     # Solicitar al usuario un valor de tipo entero y guardarlo en una variable.
     number = input_number()
@@ -26,7 +24,6 @@ def calculate_even_numbers_given_a_number():
     even_numbers.pop(0)
 
     return even_numbers
-
 
 def sum_and_print_even_numbers(sum=0):
     list_even_numbers = calculate_even_numbers_given_a_number()
