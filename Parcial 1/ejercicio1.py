@@ -20,8 +20,9 @@ def input_number():
 def calculate_even_numbers_given_a_number():
     # Solicitar al usuario un valor de tipo entero y guardarlo en una variable.
     number = input_number()
-    # Imprimir los numeros pares hasta el numero ingresado inclusive
+    # Calculo los numeros pares y los coloco en una lista
     even_numbers = [i for i in range(number + 1) if i % 2 == 0]
+    # Elimino el 0 por ser numero neutro
     even_numbers.pop(0)
 
     return even_numbers
@@ -30,6 +31,7 @@ def calculate_even_numbers_given_a_number():
 def sum_and_print_even_numbers(sum=0):
     list_even_numbers = calculate_even_numbers_given_a_number()
 
+    # Imprimo cada uno de los numeros. Creo un contador que contiene la suma acumulado de cada uno de los elementos de la lista de numeros pares.
     for number in list_even_numbers:
         print(number)
         sum = + number
