@@ -2,6 +2,7 @@ def main():
     print_word_and_number_of_letters()
 
 def input_word():
+    # El usuario ingresa una palabra. Lo convierto a una lista para que sea mas facil contar los caracteres
     word = list(input("Ingrese una palabra >> "))
     return word
 
