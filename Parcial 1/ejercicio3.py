@@ -8,8 +8,8 @@ def input_word():
 
 
 def count_letters(word, number_of_letters=0):
-    for letter_pos in range(len(word)):
-        number_of_letters = + letter_pos
+    for letter_pos in range(len(word)+1):
+        number_of_letters =+  letter_pos
     return number_of_letters
 
 
