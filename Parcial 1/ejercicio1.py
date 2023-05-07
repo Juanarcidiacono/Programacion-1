@@ -30,7 +30,7 @@ def sum_and_print_even_numbers(sum=0):
     # Imprimo cada uno de los numeros. Creo un contador que contiene la suma acumulado de cada uno de los elementos de la lista de numeros pares.
     for number in list_even_numbers:
         print(number)
-        sum =+  number
+        sum +=  number
 
     print(f"La suma de los numeros pares es {sum}")
 
