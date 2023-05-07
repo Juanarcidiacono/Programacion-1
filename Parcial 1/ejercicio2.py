@@ -9,7 +9,7 @@ def input_numbers():
 
 def n1_divisble_by_n2(n2_is_not_zero=True):
 
-    while  n2_is_not_zero:
+    while n2_is_not_zero:
         numbers = input_numbers()
         n1 = int(numbers[0])
         n2 = int(numbers[1])
