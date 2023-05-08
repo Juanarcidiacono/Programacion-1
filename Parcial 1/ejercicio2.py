@@ -7,9 +7,9 @@ def input_numbers():
 
     return [n1,n2]
 
-def n1_divisble_by_n2(n2_is_not_equat_to_zero=True):
+def n1_divisble_by_n2(n2_is_not_equal_to_zero=True):
 
-    while n2_is_not_equat_to_zero:
+    while n2_is_not_equal_to_zero:
 
         numbers = input_numbers()
         n1 = int(numbers[0])
@@ -21,7 +21,7 @@ def n1_divisble_by_n2(n2_is_not_equat_to_zero=True):
             else:
                 print("No")
         else:
-            n2_is_not_equat_to_zero = False
+            n2_is_not_equal_to_zero = False
 
     else:
         print("No es posible dividir por cero")
