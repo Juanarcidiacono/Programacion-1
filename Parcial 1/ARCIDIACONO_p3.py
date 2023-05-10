@@ -9,9 +9,10 @@ def input_word():
     return word
 
 def count_letters(word, number_of_letters=0):
-    for letter_pos in range(len(word)+1):
-        number_of_letters +=  letter_pos
 
+    for letter_pos in word:
+        number_of_letters += 1
+    
     return number_of_letters
 
 def print_word_and_number_of_letters(word_is_not_salir=True, salir=list("salir")):
