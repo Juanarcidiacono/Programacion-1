@@ -1,21 +1,28 @@
 def main():
     print_word_and_number_of_letters()
 
+# El usuario ingresa una palabra. Lo convierto 
+# a una lista para que sea mas facil contar los caracteres.
 def input_word():
-    # El usuario ingresa una palabra. Lo convierto 
-    # a una lista para que sea mas facil contar los caracteres.
+
     word = list(input("Ingrese una palabra >> ").lower())
      
     return word
 
+# Este metodo pudo haber sido reemplazo por el metodo len(). 
+# Supuse que el objetivo del ejercicio era crear un ciclo for con un contador.
 def count_letters(word, number_of_letters=0):
 
-    for letter_pos in word:
+    for pos in word:
         number_of_letters += 1
     
     return number_of_letters
 
+# Mientras la palabra ingresada NO sea 'salir', 
+# entonces que imprima en pantalla cada una de las letras de la palabra ingreada. 
+# Al final del bucle, mostrará la cantidad de letras de la palabra
 def print_word_and_number_of_letters(word_is_not_salir=True, salir=list("salir")):
+
     while word_is_not_salir:
         word = input_word()
         if word == salir:
@@ -25,12 +32,6 @@ def print_word_and_number_of_letters(word_is_not_salir=True, salir=list("salir")
                 print(letter)
 
             print(f"La cantidad de letras es: {count_letters(word)}") 
-
-            '''
-            Se pudo haber utilizado el metodo len() directamente. 
-            Supuse que la idea del ejercicio era usar un ciclo for con contador. 
-            Se pudo haber utilizado len(word) en lugar de count_letters(word)
-            '''
     else:
         print("Saliendo del programa")
 
