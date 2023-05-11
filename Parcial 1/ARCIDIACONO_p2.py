@@ -1,8 +1,10 @@
+# ARCIDIACONO JUAN IGNACIO DNI:38.684.730
+
 def main():
     n1_divisble_by_n2()
 
 # Solicitar al usuario dos numeros enteros.
-# Retorna una lista con los numeros ingreados.<
+# Retorna una lista con los numeros ingreados.
 def input_numbers():
 
     n1 = int(input("Ingrese el numero >> "))
