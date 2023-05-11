@@ -15,7 +15,7 @@ def calculate_even_numbers_given_a_number():
 
     return even_numbers
 
-# Imprimo cada uno de los numeros. Creo un contador que contiene 
+# Se imprime cada uno de los numeros. Creo un contador que contiene 
 # la suma acumulada de cada uno de los elementos de la lista de numeros pares.
 def sum_and_print_even_numbers(sum=0):
     list_even_numbers = calculate_even_numbers_given_a_number()

@@ -20,7 +20,8 @@ def count_letters(word, number_of_letters=0):
 
 # Mientras la palabra ingresada NO sea 'salir', 
 # entonces que imprima en pantalla cada una de las letras de la palabra ingreada. 
-# Al final del bucle, mostrará la cantidad de letras de la palabra
+# Al final del bucle, mostrará la cantidad de letras de la palabra.
+# Si la palabra ingresada es salir, entonces se finaliza el programa y se imprime un mensaje.
 def print_word_and_number_of_letters(word_is_not_salir=True, salir=list("salir")):
 
     while word_is_not_salir:

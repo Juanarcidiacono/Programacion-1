@@ -11,6 +11,7 @@ def input_numbers():
 
 # Mientras el numero n2 NO sea igual a cero, 
 # entonces que se fije si n1 y n2 son divisbles.
+# Si n2 es igual a cero, el programa finaliza e imprime un mensaje.
 def n1_divisble_by_n2(n2_is_not_equal_to_zero=True):
 
     while n2_is_not_equal_to_zero:
