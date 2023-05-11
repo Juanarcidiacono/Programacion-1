@@ -1,7 +1,8 @@
 def main():
     n1_divisble_by_n2()
 
-# Solicitar al usuario dos numeros enteros
+# Solicitar al usuario dos numeros enteros.
+# Retorna una lista con los numeros ingreados.<
 def input_numbers():
 
     n1 = int(input("Ingrese el numero >> "))
