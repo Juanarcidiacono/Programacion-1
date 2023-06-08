@@ -1,9 +1,9 @@
 def main():
-   # data = data_input()
-   # nombres = data[0]
-   # sueldos = data[1]
-    nombres = ['PEDRO', 'SOFIA', 'JOSEFINA', 'JOSE', 'ESTEBAN','JUAN']
-    sueldos = [1,         10,        9,        10,       5,       6]
+    data = data_input()
+    nombres = data[0]
+    sueldos = data[1]
+    # nombres = ['PEDRO', 'SOFIA', 'JOSEFINA', 'JOSE', 'ESTEBAN','JUAN']
+    # sueldos = [8,         10,        9,        10,       5,       6]
     print(f"Sueldo promedio {calcular_promedio_sueldos(sueldos)}")
     print(f"Ordenar por sueldo max {ordenar_por_sueldo(sueldos,nombres)}")
     print(f"Empleados sueldo max {obtener_empleado_sueldo_max(sueldos,nombres)}")
@@ -12,9 +12,10 @@ def calcular_promedio_sueldos(sueldos):
     # Caluclo promedio usando los metodos sum y len. Redondeo a una cifra decimal
     return round(sum(sueldos)/len(sueldos),1)
 
-def obtener_empleado_sueldo_max(sueldos, nombres,
-                                hay_personas_con_el_mismo_sueldo=True,nombres_sueldo_max=[]):
+def obtener_empleado_sueldo_max(sueldos, nombres):
     
+    '''
+    max_sueldos = max(sueldos)
     NOMBRES = nombres
     max_sueldo = max(sueldos)
     # Puede haber personas con el mismo sueldo. Contemplo el caso 
@@ -30,8 +31,8 @@ def obtener_empleado_sueldo_max(sueldos, nombres,
             
         else:
             hay_personas_con_el_mismo_sueldo = False
-    
-    return nombres_sueldo_max
+    '''    
+    return [nombre for nombre, sueldo in zip(nombres, sueldos) if sueldo == max(sueldos)]
  
 def ordenar_por_sueldo(sueldos,nombres,sueldos_ord=[], nombres_ord=[]):
     

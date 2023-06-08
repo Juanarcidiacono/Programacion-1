@@ -1,16 +1,13 @@
 def main():
-    #palabras = ingresar_palabras()
+    palabras = ingresar_palabras()
     letra = input("Ingrese la letra que quiere buscar: ").lower()
-    palabras = ['juan','sebastian','ines','pablo','roberto','tomas','agustin']
+    # palabras = ['juan','sebastian','ines','pablo','roberto','tomas','agustin']
     print(encontrar_palabras_con_letra(palabras,letra))
     print(ordenar_palabras_longitud(palabras))
     
-def encontrar_palabras_con_letra(palabras,letra,match_palabras=[]):
-    for palabra in palabras:
-        if letra in palabra:
-            match_palabras.append(palabra)
-            
-    return match_palabras
+def encontrar_palabras_con_letra(palabras,letra):
+
+    return [palabra for palabra in palabras if letra in palabra]
 
 def ordenar_palabras_longitud(palabras):
     for i in range(len(palabras)):
